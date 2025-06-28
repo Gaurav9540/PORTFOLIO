@@ -17,24 +17,25 @@ header {
   padding: 30px 50px;
   background-color: #0d1b2a;
   position: sticky;
-  top: 0; 
+  top: 0;
   z-index: 1000;
-  /* box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);  */
 }
 
 .logo {
   font-size: 28px;
   font-weight: bold;
   color: #fff;
-  margin-left: 0px; 
+  margin-left: 0px;
   text-align: left;
   letter-spacing: 2px;
 }
+
 .white-text {
   color: #ffffff;
 }
+
 .red-text {
-  color: #ff4d4d; 
+  color: #ff4d4d;
 }
 
 nav ul {
@@ -64,7 +65,7 @@ nav ul li a:hover {
 }
 
 .hero h1 {
-  font-size: 30px;
+  font-size: 32px;
   margin-bottom: 40px;
 }
 
@@ -152,7 +153,6 @@ nav ul li a:hover {
   border-radius: 50%;
 }
 
-/* Text styles */
 .year {
   font-weight: bold;
   color: #00b4d8;
@@ -166,4 +166,133 @@ h4 {
 p {
   font-size: 14px;
   line-height: 1.6;
+}
+
+/* ----------------- Responsive Design ----------------- */
+
+@media (max-width: 1024px) {
+  header {
+    padding: 25px 30px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .journey-container {
+    gap: 40px;
+    padding: 0 15px;
+  }
+
+  .journey-column h3 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 25px;
+  }
+
+  .logo {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 25px 15px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .journey-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .journey-column {
+    max-width: 100%;
+  }
+
+  .timeline-line {
+    left: -15px;
+  }
+
+  .journey-box::before {
+    left: -22px;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .logo {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 0;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .journey-column h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .journey-box {
+    padding: 15px;
+  }
+
+  .year-row {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    font-size: 13.5px;
+  }
+
+  .timeline-line {
+    display: none;
+  }
+
+  .journey-box::before {
+    display: none;
+  }
 }

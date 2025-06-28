@@ -17,24 +17,25 @@ header {
   padding: 30px 50px;
   background-color: #0d1b2a;
   position: sticky;
-  top: 0; 
+  top: 0;
   z-index: 1000;
-  /* box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);  */
 }
 
 .logo {
   font-size: 28px;
   font-weight: bold;
   color: #fff;
-  margin-left: 0px; 
+  margin-left: 0px;
   text-align: left;
   letter-spacing: 2px;
 }
+
 .white-text {
   color: #ffffff;
 }
+
 .red-text {
-  color: #ff4d4d; 
+  color: #ff4d4d;
 }
 
 nav ul {
@@ -82,7 +83,7 @@ nav ul li a:hover {
 .contact-form-section {
   max-width: 650px;
   margin: 0 auto;
-  padding: 0px 20px 40px; /* ↓ top padding from 40px to 10px */
+  padding: 0px 20px 40px;
 }
 
 .contact-form {
@@ -121,8 +122,8 @@ button[type="submit"] {
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: 150px;         
-  margin: 0 auto;       
+  width: 150px;
+  margin: 0 auto;
   display: block;
 }
 
@@ -149,5 +150,47 @@ button[type="submit"]:hover {
 @media (max-width: 600px) {
   .form-row {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .contact-form-section {
+    padding: 0 10px 40px;
+  }
+
+  button[type="submit"] {
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
   }
 }
