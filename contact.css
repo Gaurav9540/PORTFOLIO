@@ -1,3 +1,195 @@
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1b2a;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  background-color: #0d1b2a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 0px;
+  text-align: left;
+  letter-spacing: 2px;
+}
+
+.white-text {
+  color: #ffffff;
+}
+
+.red-text {
+  color: #ff4d4d;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding-left: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: #00b4d8;
+}
+
+.hero {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.my-word {
+  color: #fff;
+  font-weight: bold;
+}
+
+.journey-word {
+  color: #00b4d8;
+  font-weight: bold;
+}
+
+.contact-form-section {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0px 20px 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row input,
+.form-row textarea {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1.5px solid #00b4d8;
+  background-color: #0d1b2a;
+  color: white;
+  font-size: 16px;
+}
+
+.form-row textarea {
+  resize: vertical;
+  height: 10px;
+}
+
+button[type="submit"] {
+  background-color: #00b4d8;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+button[type="submit"]:hover {
+  background-color: #0077a6;
+}
+
+.full-width {
+  flex-direction: column;
+  height: 200px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1b263b;
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 40px;
+  border-top: 1px solid #334;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .contact-form-section {
+    padding: 0 10px 40px;
+  }
+
+  button[type="submit"] {
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+  }
+} */
+
+
+
 /* Contact.css */
 
 /* Base styles */
@@ -155,29 +347,38 @@ button[type="submit"]:hover {
 
 @media (max-width: 480px) {
   header {
-    padding: 20px;
+    padding: 30px;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .logo {
-    font-size: 20px;
+    font-size: 22px;
     width: 100%;
-    text-align: center;
     margin-bottom: 10px;
+    text-align: left;
+  }
+
+  nav {
+    width: 100%;
   }
 
   nav ul {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 15px;
     padding-left: 0;
     margin: 0;
   }
 
   nav ul li {
-    text-align: center;
+    text-align: left;
+  }
+
+  nav ul li a {
+    font-size: 14px;
   }
 
   .hero h1 {
@@ -186,11 +387,13 @@ button[type="submit"]:hover {
 
   .contact-form-section {
     padding: 0 10px 40px;
+    width: 90%;
   }
 
   button[type="submit"] {
     font-size: 15px;
     padding: 10px;
-    width: 100%;
+    width: 70%;
   }
 }
+

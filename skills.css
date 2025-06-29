@@ -257,17 +257,25 @@ nav ul li a:hover {
 
 @media (max-width: 480px) {
   .logo {
-    font-size: 20px;
+    font-size: 22px;
     text-align: left;          /* align logo text left */
-    width: auto;               /* don't stretch full width */
+    width: 100%;               /* don't stretch full width */
     margin-bottom: 10px;
   }
 
+  header {
+    padding: 30px;
+  }
+  
   nav ul {
     flex-direction: row;       /* horizontal navbar */
     flex-wrap: wrap;           /* wrap if needed */
-    gap: 10px;
+    gap: 15px;
     padding: 0;
+  }
+
+   .skills-container {
+     width: 90%;
   }
 
   nav ul li {
